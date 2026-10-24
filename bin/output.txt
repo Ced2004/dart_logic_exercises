@@ -1,0 +1,22 @@
+=== NTC GRADE EVALUATION SYSTEM ===
+
+--- TEST 1: Valid Student Data ---
+Processing grades for: Juan Dela Cruz...
+  -> Valid grade recorded: 85.5
+  -> Valid grade recorded: 90
+  -> Valid grade recorded: 78.25
+  -> Valid grade recorded: 88
+Calculated Average: 85.44
+Status: PASSED (Congratulations Juan Dela Cruz!)
+
+--- TEST 2: Testing Bad Input with Try/Catch ---
+Processing grades for: Maria Clara...
+  -> Valid grade recorded: 82
+  [ERROR CAUGHT]: Could not process grade "-15". Reason: FormatException: Grade -15 is out of range (0-100).
+  [ERROR CAUGHT]: Could not process grade "INVALID_GRADE". Reason: FormatException: Invalid double
+INVALID_GRADE
+  -> Valid grade recorded: 76.5
+Calculated Average: 79.25
+Status: PASSED (Congratulations Maria Clara!)
+
+====================================
